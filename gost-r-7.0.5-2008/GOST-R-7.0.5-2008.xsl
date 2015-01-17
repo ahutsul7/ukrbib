@@ -34,11 +34,12 @@
   <!-- Variable containing all necessary data for a certain style of bibliography. -->
   <xsl:variable name="data">
     <general>
-      <stylename>ГОСТ Р 7.0.5-2008 (сортировка по порядку включения)</stylename>
-      <version>2012.03.05</version>
+      <stylename>ДСТУ 7.1:2006</stylename>
+      <version>2015.01.17</version>
       <author>Андрей Рогожников (rogozhnikov.andrey@gmail.com)</author>
-      <description>Реализация стиля библиографии, определяемого ГОСТом Р 7.0.5-2008</description>
-      <URL>http://bibword.codeplex.com/updateStyle?id=123</URL>
+	  <author>Олександр Корнєєв (onekosha@gmail.com)</author>
+      <description>Реалізація стилю бібліографії, згідно вимог ДСТУ ГОСТ 7.1:2006</description>
+      <URL>https://github.com/onekosha/ukrbib</URL>
       <comments>
         This is version 2.8 of the BibWord stylesheet.
       </comments>
@@ -261,7 +262,7 @@
           <halign>left</halign>
           <valign>top</valign>
           <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%{. %Edition:o% ed.}{. Vol %Volume%.}{ // In: %BookTitle%}{ / Ed. by %BookAuthor:233%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages:P. :pp. %}.</format>
-          <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%{. %Edition%-е изд.}{. Т. %Volume%.}{ // В кн.: %BookTitle%}{ / ред. %BookAuthor:249%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ С. %Pages%}.</format>
+          <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%{. %Edition%-е вид.}{. Т. %Volume%.}{ // В кн.: %BookTitle%}{ / ред. %BookAuthor:249%}.}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ С. %Pages%}.</format>
         </column>
       </source>
       <source type="JournalArticle"><!-- what's the difference between this and ArticleInAPeriodial? Use the former. -->
@@ -329,8 +330,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:249%.}{ %Title% [Электронный ресурс]}{ // %InternetSiteTitle%: [сайт].}{ [%Year%].}{ URL: %URL:0s%}{ (дата обращения: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
-          <format lcid="1049">{%Author:249%.}{ %Title% [Электронный ресурс]}{ // %InternetSiteTitle%: [сайт].}{ [%Year%].}{ URL: %URL:0s%}{ (дата обращения: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
+          <format lcid="1033">{%Author:249%.}{ %Title% [Електроний ресурс]}{ // %InternetSiteTitle%: [сайт].}{ [%Year%].}{ URL: %URL:0s%}{ (дата звернення: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
+          <format lcid="1049">{%Author:249%.}{ %Title% [Електроний ресурс]}{ // %InternetSiteTitle%: [сайт].}{ [%Year%].}{ URL: %URL:0s%}{ (дата звернення: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
         </column>
         <sortkey></sortkey>
       </source>
@@ -343,8 +344,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-           <format lcid="1033">{%Author:249%.}{ %Title%}{ // %InternetSiteTitle%.}{ %Year%.}{ URL: %URL:0s%}{ (дата обращения: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
-           <format lcid="1049">{%Author:249%.}{ %Title%}{ // %InternetSiteTitle%.}{ %Year%.}{ URL: %URL:0s%}{ (дата обращения: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
+           <format lcid="1033">{%Author:249%.}{ %Title%}{ // %InternetSiteTitle%.}{ %Year%.}{ URL: %URL:0s%}{ (дата звернення: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
+           <format lcid="1049">{%Author:249%.}{ %Title%}{ // %InternetSiteTitle%.}{ %Year%.}{ URL: %URL:0s%}{ (дата звернення: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
         </column>
         <sortkey></sortkey>
       </source>
@@ -387,8 +388,8 @@
           <valign>top</valign>
 <!--      <format lcid="1033">{%Author:133%, }{%Title%}{,{ %Month:s%{ %Day%,}} %Year%}{, %Comments%}.</format>
           <format lcid="1049">{%Author:149%, }{%Title%}{,{ %Month:s%{ %Day%,}} %Year%}{, %Comments%}.</format> -->
-          <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%.{ %Edition:o% ed.}{ Vol %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% pp.}{ %Comments%.}</format>
-          <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%.{ %Edition%-е изд.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% с.}{ %Comments%.}</format>
+          <format lcid="1033">{%Author:233|Editor:333%.}{ %Title|ShortTitle%.{ %Edition:o% вид.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% pp.}{ %Comments%.}</format>
+          <format lcid="1049">{%Author:249|Editor:349%.}{ %Title|ShortTitle%.{ %Edition%-е вид.}{ Т. %Volume%.}}{ %City%{ (%StateProvince%)}{: %Publisher%{, %Year%}}.}{ %Publisher%{, %Year%}.}{ %Year%.}{ %Pages% с.}{ %Comments%.}</format>
         </column>
         <sortkey></sortkey>
       </source>
@@ -448,7 +449,7 @@
         <separator_before_last>, and </separator_before_last>
         <max_number_of_persons_to_display>2</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
-        <overflow> et al.</overflow>
+        <overflow> та ін.</overflow>
         <single_suffix></single_suffix>
         <multi_suffix></multi_suffix>
       </list>
@@ -463,7 +464,7 @@
         <separator_before_last> и </separator_before_last>
         <max_number_of_persons_to_display>2</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
-        <overflow> и др.</overflow>
+        <overflow> та ін.</overflow>
         <single_suffix></single_suffix>
         <multi_suffix></multi_suffix>
       </list>
@@ -478,7 +479,7 @@
         <separator_before_last>, and </separator_before_last>
         <max_number_of_persons_to_display>12</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>10</number_of_persons_to_display_if_more_than_max>
-        <overflow>, et al.</overflow>
+        <overflow>, та ін.</overflow>
         <single_suffix></single_suffix>
         <multi_suffix></multi_suffix>
       </list>
@@ -493,7 +494,7 @@
         <separator_before_last>, </separator_before_last>
         <max_number_of_persons_to_display>12</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>10</number_of_persons_to_display_if_more_than_max>
-        <overflow> и др.</overflow>
+        <overflow> та ін.</overflow>
         <single_suffix></single_suffix>
         <multi_suffix></multi_suffix>
       </list>
@@ -508,9 +509,9 @@
         <separator_before_last>, </separator_before_last>
         <max_number_of_persons_to_display>10</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>10</number_of_persons_to_display_if_more_than_max>
-        <overflow>, et al.</overflow>
-        <single_suffix>, editor</single_suffix>
-        <multi_suffix>, editors</multi_suffix>
+        <overflow>, та ін.</overflow>
+        <single_suffix>, редактор</single_suffix>
+        <multi_suffix>, редакторы</multi_suffix>
       </list>
       <list name="editor" id="349">
         <single_prefix></single_prefix>
@@ -523,25 +524,25 @@
         <separator_before_last>, </separator_before_last>
         <max_number_of_persons_to_display>10</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>10</number_of_persons_to_display_if_more_than_max>
-        <overflow> и др.</overflow>
+        <overflow> та ін.</overflow>
         <single_suffix>, редактор</single_suffix>
-        <multi_suffix>, редакторы</multi_suffix>
+        <multi_suffix>, редактори</multi_suffix>
       </list>
     </namelists>
     <strings>
       <months>
-        <month number="1">Jan</month>
-        <month number="2">Feb</month>
-        <month number="3">Mar</month>
-        <month number="4">Apr</month>
-        <month number="5">May</month>
-        <month number="6">Jun</month>
-        <month number="7">Jul</month>
-        <month number="8">Aug</month>
-        <month number="9">Sep</month>
-        <month number="10">Oct</month>
-        <month number="11">Nov</month>
-        <month number="12">Dec</month>
+        <month number="1">Січень</month>
+        <month number="2">Лютий</month>
+        <month number="3">Березень</month>
+        <month number="4">Квітень</month>
+        <month number="5">Иравень</month>
+        <month number="6">Червень</month>
+        <month number="7">Липень</month>
+        <month number="8">Серпень</month>
+        <month number="9">Вересень</month>
+        <month number="10">Жовтень</month>
+        <month number="11">Листопад</month>
+        <month number="12">Грудень</month>
       </months>
       <sourcetypes>
         <sourcetype type="Art">Art</sourcetype>
