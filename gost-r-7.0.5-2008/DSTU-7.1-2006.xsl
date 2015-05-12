@@ -459,9 +459,9 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last|First%}{ %First:a%}{%Middle:a%}</first_person>
         <other_persons>{%Last|First%}{ %First:a%}{%Middle:a%}</other_persons>
-        <separator_between_if_two> и </separator_between_if_two>
+        <separator_between_if_two> і </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last> и </separator_before_last>
+        <separator_before_last> і </separator_before_last>
         <max_number_of_persons_to_display>2</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> та ін.</overflow>
@@ -476,7 +476,7 @@
         <other_persons>{%Last|First%}{ %First:apu%}{%Middle:apu%}</other_persons>
         <separator_between_if_two>, </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last>, and </separator_before_last>
+        <separator_before_last>, та </separator_before_last>
         <max_number_of_persons_to_display>12</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>10</number_of_persons_to_display_if_more_than_max>
         <overflow>, та ін.</overflow>
@@ -535,7 +535,7 @@
         <month number="2">Лютий</month>
         <month number="3">Березень</month>
         <month number="4">Квітень</month>
-        <month number="5">Иравень</month>
+        <month number="5">Травень</month>
         <month number="6">Червень</month>
         <month number="7">Липень</month>
         <month number="8">Серпень</month>
@@ -553,14 +553,14 @@
         <sourcetype type="ConferenceProceedings">Conference Proceedings</sourcetype>
         <sourcetype type="DocumentFromInternetSite">Electronic Document</sourcetype>
         <sourcetype type="ElectronicSource">Electronic Source</sourcetype>
-        <sourcetype type="Film">Film</sourcetype>
-        <sourcetype type="InternetSite">Web Site</sourcetype>
+        <sourcetype type="Film">Фільм</sourcetype>
+        <sourcetype type="InternetSite">Сайт</sourcetype>
         <sourcetype type="Interview">Interview</sourcetype>
         <sourcetype type="JournalArticle">Journal Article</sourcetype>
         <sourcetype type="Misc">Miscellaneous</sourcetype>
         <sourcetype type="Patent">Patent</sourcetype>
         <sourcetype type="Performance">Performance</sourcetype>
-        <sourcetype type="Report">Report</sourcetype>
+        <sourcetype type="Report">Звіт</sourcetype>
         <sourcetype type="SoundRecording">Sound Recording</sourcetype>
       </sourcetypes>
     </strings>
