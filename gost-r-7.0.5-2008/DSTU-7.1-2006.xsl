@@ -330,8 +330,8 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format lcid="1033">{%Author:249%.}{ %Title% [Електроний ресурс]}{ // %InternetSiteTitle%: [сайт].}{ [%Year%].}{ URL: %URL:0s%}{ (дата звернення: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
-          <format lcid="1049">{%Author:249%.}{ %Title% [Електроний ресурс]}{ // %InternetSiteTitle%: [сайт].}{ [%Year%].}{ URL: %URL:0s%}{ (дата звернення: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
+          <format lcid="1033">{%Author:249%.}{ %Title% [Електронний ресурс]}{ // %InternetSiteTitle%: [сайт].}{ [%Year%].}{ URL: %URL:0s%}{ (дата звернення: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
+          <format lcid="1049">{%Author:249%.}{ %Title% [Електронний ресурс]}{ // %InternetSiteTitle%: [сайт].}{ [%Year%].}{ URL: %URL:0s%}{ (дата звернення: %DayAccessed%.%MonthAccessed%.%YearAccessed%).}</format>
         </column>
         <sortkey></sortkey>
       </source>
